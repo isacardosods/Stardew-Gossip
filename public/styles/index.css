@@ -16,6 +16,7 @@ body {
 }
 
 .post {
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -76,17 +77,17 @@ body {
 }
 
 .sidebar {
-  width: 30%;
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 30%;
-  bottom: 20%;
-  left: 60vw;
+  right: 5vw;
   flex-direction: column;
 }
 
 .sidebar-box {
+  width: 30vw;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -104,6 +105,10 @@ body {
   width: auto;
   display: flex;
   align-items: flex-start;
+}
+
+.search-box {
+  width: 40vw;
 }
 
 .search-box input[type="search"] {
@@ -124,15 +129,25 @@ body {
   background: var(--header-color--);
   color: #fff;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .search-box h2 {
   color: #1d3557;
 }
+.search-box span {
+  color: #888;
+}
 
 .search-box button:hover {
   opacity: 95%;
+}
+
+.post-content{
+  display: flex;
+  width: 30vw;
+  height: 20vh;
+  background-color: red;
 }
 
 footer {
@@ -145,7 +160,7 @@ footer {
   margin-top: 100%;
 }
 
-footer p{
+footer p {
   display: flex;
   align-items: center;
   justify-content: center;
