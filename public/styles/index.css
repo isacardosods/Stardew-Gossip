@@ -1,0 +1,152 @@
+@import url("home.css");
+
+body {
+  background: url(../images/bg-login.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5vh;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--color-neutral-1--);
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.post h2 {
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+
+.post p {
+  text-align: left;
+}
+
+.post .date {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3a86ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  color: #888;
+}
+
+.tags span {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+
+.tags span:hover {
+  background: #154a9f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 30%;
+  bottom: 20%;
+  left: 60vw;
+  flex-direction: column;
+}
+
+.sidebar-box {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-box h3 {
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+.sidebar-box p {
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.search-box input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-top: 1vh;
+}
+
+.search-box button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: var(--header-color--);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box h2 {
+  color: #1d3557;
+}
+
+.search-box button:hover {
+  opacity: 95%;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: var(--color-neutral-2--);
+  color: #fff;
+  margin-top: 100%;
+}
+
+footer p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
