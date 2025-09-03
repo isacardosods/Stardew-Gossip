@@ -1,0 +1,49 @@
+@import url("home.css");
+@import url("index.css");
+
+body {
+  background: url(../images/bg-login.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5vh;
+}
+
+.posts-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1.5vh;
+  border-radius: 12px;
+  width: 80%;
+  background-color: white;
+  opacity: 80%;
+  padding: 25px;
+}
+.textbox {
+  margin-bottom: 1vh;
+}
+.textbox h1 {
+  font-size: 3em;
+}
+.textbox span {
+  font-size: 1.3em;
+}
+.tags span {
+  font-size: 1.2em;
+}
+.content {  
+  margin-top: 5vh;
+}
+.content p {
+  width: auto;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+

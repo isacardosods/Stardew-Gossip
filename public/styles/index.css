@@ -1,4 +1,81 @@
-@import url("home.css");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root{
+    --header-color--: #170846;
+    --main-section-color--: #f7d671f6;
+
+    --color-neutral-1--: #fff;
+    --color-neutral-2--: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+    font-family: 'JetBrains Mono', serif;
+}
+
+header{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    padding: 30px 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav, ul, li, a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--color-neutral-1--);
+}
+
+header nav .navbar-links a, li{
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-neutral-1--);
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+nav, .navbar-links, li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav, .navbar-links, li, a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    
+}
+
+header, .login-button button{
+    padding: 10px 25px;
+    font-size: 1.8rem;
+    border: none;
+
+    background-color:var(--header-color--);
+    color: var(--color-neutral-1--);
+    cursor: pointer;
+    transition: all 0.3s ease 0s
+}
+
+ .login-button button:hover{
+     color: rgb(168, 168, 172);
+}
+
+.navbar-links a:hover{
+    color: rgb(168, 168, 172);
+}
 
 body {
   background: url(../images/bg-login.jpg);
@@ -21,7 +98,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   background: var(--color-neutral-1--);
-  margin-bottom: 30px;
+  margin-bottom: 1.5vh;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
@@ -170,16 +247,19 @@ body {
 
 footer {
   width: 100%;
+  height: 15vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px;
   background: var(--color-neutral-2--);
   color: #fff;
-  margin-top: 100%;
 }
 
 footer p {
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.3em;
 }
