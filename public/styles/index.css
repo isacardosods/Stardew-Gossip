@@ -254,6 +254,7 @@ footer {
   padding: 20px;
   background: var(--color-neutral-2--);
   color: #fff;
+  z-index: 999;
 }
 
 footer p {
