@@ -255,6 +255,7 @@ footer {
   background: var(--color-neutral-2--);
   color: #fff;
   z-index: 999;
+  margin-top: 80%;
 }
 
 footer p {

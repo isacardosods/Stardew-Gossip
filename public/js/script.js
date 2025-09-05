@@ -1,9 +1,9 @@
-const busca = document.querySelector("busca");
+const busca = document.querySelector("#busca");
 const posts = document.querySelectorAll(".post");
 
 function normalizarTexto(texto) {
   return texto
-    .toLowerCase()
+    .toLowerCase()  
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
 }
